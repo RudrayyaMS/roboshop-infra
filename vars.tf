@@ -10,7 +10,7 @@ variable "instances" {
     }
     catalogue = {
       name  = "catalogue"
-      type = "t3.small"
+      type = "t3.micro"
     }
     redis = {
       name  = "redis"
