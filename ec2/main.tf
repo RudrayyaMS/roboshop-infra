@@ -14,6 +14,10 @@ resource "aws_instance" "ec2" {
   tags = {
     Name = var.component
   }
+}
+
+# it will not destroy the instance and will create the route53 record
+resource "null_resource" "provisioner" {
 
   provisioner "remote-exec" {
 
@@ -30,6 +34,7 @@ resource "aws_instance" "ec2" {
     ]
   }
 }
+
 
 # DNS record creation
 resource "aws_route53_record" "record" {
