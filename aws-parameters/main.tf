@@ -1,5 +1,5 @@
-resource "aws_ssm_parameter" "parameters" {
-  count = length(var.parameters)
+resource "aws_ssm_parameter" "parameter" {
+  count = length(var.parameters)                       # name is coming from list use count
   name  = var.parameters[count.index].name
   type  = var.parameters[count.index].type
   value = var.parameters[count.index].value
