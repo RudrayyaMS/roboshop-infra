@@ -13,7 +13,7 @@ parameters = [
   { name= "dev.shipping.cart_endpoint" ,   value = "cart-dev.devopsm71.online" , type= "String"},
   { name= "dev.shipping.db_host" ,   value = "mysql-dev.devopsm71.online" , type= "String"},
   ##payment service
-  { name= "dev.payment.cart.host" , value = "cart-dev.devopsm71.online" , type= "String"},
+  { name= "dev.payment.cart_host" , value = "cart-dev.devopsm71.online" , type= "String"},
   { name= "dev.payment.cart_port" , value = "8080" , type= "String"},
   { name= "dev.payment.user_host" , value = "user-dev.devopsm71.online" , type= "String"},
   { name= "dev.payment.user_port" , value = "8080" , type= "String"},
