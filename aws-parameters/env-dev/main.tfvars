@@ -20,7 +20,7 @@ parameters = [
   { name= "dev.payment.amqp_host" , value = "rabbitmq-dev.devopsm71.online" , type= "String"},
   ##catalogue service
   { name= "dev.catalogue.mongo" , value = "true" , type= "String"},
-  { name= "dev.catalogue.mongo_url" , value = "mongodb://mongo-dev.devopsm71.online:27017/users" , type= "String"},
+  { name= "dev.catalogue.mongo_url" , value = "mongodb://mongo-dev.devopsm71.online:27017/catalogue" , type= "String"},
   ##cart service
   { name= "dev.cart.redis_host" , value = "redis-dev.devopsm71.online" , type= "String"},
   { name= "dev.cart.catalogue_host" , value = "catalogue-dev.devopsm71.online" , type= "String"},
