@@ -29,7 +29,7 @@ parameters = [
 
 
 ## This is not going to be practice in companies , we should not keep passwords in git repo
-secretrs = [
+secrets = [
   { name= "dev.mysql.password" , value = "Roboshop@1" , type= "SecureString"},
   { name= "dev.payment.amqp_user" , value = "roboshop" , type= "SecureString"},
   { name= "dev.payment.amqp_pass" , value = "roboshop123" , type= "SecureString"},
