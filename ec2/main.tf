@@ -13,7 +13,7 @@ resource "aws_instance" "ec2" {
 
 # it will not destroy the instance and will create the route53 record
 resource "null_resource" "provisioner" {
-
+  depends_on = [aws_route53_record.record]
   provisioner "remote-exec" {
 
     connection {
