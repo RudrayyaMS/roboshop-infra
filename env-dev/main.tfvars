@@ -2,7 +2,7 @@ env = "dev"
 
 vpc = {
   main = {
-    cidr = "10.0.0.0/16"   # main network range from create public and private subnet
+    vpc_cidr = "10.0.0.0/16"   # main network range from create public and private subnet
 
     public_subnets = {
       public = {
