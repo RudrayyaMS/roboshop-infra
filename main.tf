@@ -9,6 +9,6 @@ module "vpc" {
   private_subnets = each.value["private_subnets"]
 }
 
-output "vpc" {
-  value = module.vpc
-}
+#output "vpc" {
+#  value = module.vpc
+#}
