@@ -11,17 +11,17 @@ module "vpc" {
   private_subnets = each.value["private_subnets"]
 }
 
-## docdb
-module "docdb" {
-  source = "git::https://github.com/RudrayyaMS/tf-module-docdb.git"
-  env = var.env
-  tags = var.tags
-
-  for_each = var.vpc
-  engine = each.value["engine"]
-#  public_subnets = each.value["public_subnets"]
-#  private_subnets = each.value["private_subnets"]
-}
+### docdb
+#module "docdb" {
+#  source = "git::https://github.com/RudrayyaMS/tf-module-docdb.git"
+#  env = var.env
+#  tags = var.tags
+#
+#  for_each = var.vpc
+#  engine = each.value["engine"]
+##  public_subnets = each.value["public_subnets"]
+##  private_subnets = each.value["private_subnets"]
+#}
 
 
 #output "vpc" {
