@@ -59,6 +59,6 @@ docdb = {
     engine_version = "4.0.0"
     backup_retention_period = 2
     preferred_backup_window = "07:00-09:00"
-    skip_final_snapshot     = true
+    skip_final_snapshot     = true     ## terraform can delete the resource created otherwise wont delete
   }
 }
