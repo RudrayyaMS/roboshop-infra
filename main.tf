@@ -17,7 +17,7 @@ module "docdb" {
   env = var.env
   tags = var.tags
 
-  for_each = var.vpc
+  for_each = var.docdb
   engine = each.value["engine"]
   engine_version = each.value["engine_version"]
   backup_retention_period = each.value["backup_retention_period"]
