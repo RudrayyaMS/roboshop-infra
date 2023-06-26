@@ -2,7 +2,7 @@ git:
 	#git pull
 	rm -rf .terraform
 dev-apply: git
-	cd aws_parameters
+	cd aws-parameters
 	terraform init -backend-config=env-dev/state.tfvars
 	terraform apply -auto-approve -var-file=env-dev/main.tfvars
 	cd ..
