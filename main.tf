@@ -78,6 +78,7 @@ module "alb" {
   tags = var.tags
 
   for_each = var.alb
+  name    = each.value["name"]
   internal =  each.value["internal"]
   load_balancer_type =  each.value["load_balancer_type"]
   subnets = lookup(local.subnet_ids, each.value["subnet_name"], null )
