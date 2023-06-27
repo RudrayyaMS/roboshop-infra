@@ -90,3 +90,19 @@ rabbitmq = {
     instance_type      = "t3.micro"
   }
 }
+
+alb = {
+    public = {
+      public_subnet = "web"
+      name        = "public"
+      internal  = false
+      load_balancer_type = "application"
+    }
+
+    private = {
+      private_subnet = "app"
+      name        = "private"
+      internal  = true
+      load_balancer_type = "application"
+    }
+}
