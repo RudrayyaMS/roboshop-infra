@@ -93,14 +93,14 @@ rabbitmq = {
 
 alb = {
     public = {
-      public_subnet = "web"
+      subnet_name = "web"
       name        = "public"
       internal  = false
       load_balancer_type = "application"
     }
 
     private = {
-      private_subnet = "app"
+      subnet_name = "app"
       name        = "private"
       internal  = true
       load_balancer_type = "application"
