@@ -30,21 +30,21 @@ module "vpc" {
 #}
 #
 #
-module "rds" {
-  source = "git::https://github.com/RudrayyaMS/tf-module-rds.git"
-  env = var.env
-  tags = var.tags
-
-  subnet_ids = local.db_subnet_ids
-
-  for_each = var.rds
-  engine = each.value["engine"]
-  engine_version = each.value["engine_version"]
-  backup_retention_period = each.value["backup_retention_period"]
-  preferred_backup_window = each.value["preferred_backup_window"]
-  no_of_instances   = each.value["no_of_instances"]
-  instance_class    = each.value["instance_class"]
-}
+#module "rds" {
+#  source = "git::https://github.com/RudrayyaMS/tf-module-rds.git"
+#  env = var.env
+#  tags = var.tags
+#
+#  subnet_ids = local.db_subnet_ids
+#
+#  for_each = var.rds
+#  engine = each.value["engine"]
+#  engine_version = each.value["engine_version"]
+#  backup_retention_period = each.value["backup_retention_period"]
+#  preferred_backup_window = each.value["preferred_backup_window"]
+#  no_of_instances   = each.value["no_of_instances"]
+#  instance_class    = each.value["instance_class"]
+#}
 #
 #module "elasticache" {
 #  source = "git::https://github.com/RudrayyaMS/tf-module-elasticache.git"
