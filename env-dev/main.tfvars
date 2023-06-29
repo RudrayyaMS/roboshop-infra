@@ -111,7 +111,7 @@ alb = {
 apps = {
   catalogue = {
     component  = "catalogue"
-    instance_type = "t3.nano"
+    instance_type = "t3.small"
     desired_capacity   = 1
     max_size           = 4
     min_size           = 1
@@ -119,7 +119,7 @@ apps = {
   }
   cart = {
     component  = "cart"
-    instance_type = "t3.nano"
+    instance_type = "t3.small"
     desired_capacity   = 1
     max_size           = 4
     min_size           = 1
@@ -127,7 +127,7 @@ apps = {
   }
   user = {
     component  = "user"
-    instance_type = "t3.nano"
+    instance_type = "t3.small"
     desired_capacity   = 1
     max_size           = 4
     min_size           = 1
@@ -135,7 +135,7 @@ apps = {
   }
   shipping = {
     component  = "shipping"
-    instance_type = "t3.micro"    ## requires more memory so use t3.micro instead nano
+    instance_type = "t3.small"    ## requires more memory so use t3.micro instead nano
     desired_capacity   = 1
     max_size           = 4
     min_size           = 1
@@ -143,7 +143,7 @@ apps = {
   }
   payment = {
     component  = "payment"
-    instance_type = "t3.micro"
+    instance_type = "t3.small"
     desired_capacity   = 1
     max_size           = 4
     min_size           = 1
@@ -151,7 +151,7 @@ apps = {
   }
   frontend = {
     component  = "frontend"
-    instance_type = "t3.nano"
+    instance_type = "t3.small"
     desired_capacity   = 1
     max_size           = 4
     min_size           = 1
