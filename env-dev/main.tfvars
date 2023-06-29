@@ -1,4 +1,5 @@
 env = "dev"
+bastion_cidr  = [ "172.31.95.12/32"]   # 32 - one single IP address
 
 vpc = {
   main = {
