@@ -90,6 +90,8 @@ module "app" {
   env    = var.env
   tags   = var.tags
 
+  vpc_id  = module.vpc["main"].vpc_id
+
   for_each = var.apps
   component     = each.value["component"]
   instance_type = each.value["instance_type"]
