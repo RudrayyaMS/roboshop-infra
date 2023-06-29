@@ -98,9 +98,9 @@ module "app" {
   min_size           = each.value["min_size"]
   subnets = lookup(local.subnet_ids, each.value["subnet_name"], null )
 }
-#output "vpc" {
-#  value = module.vpc
-#}
+output "vpc" {
+  value = module.vpc
+}
 #output "vpc" {
 #  value = local.db_subnet_ids
 #}
