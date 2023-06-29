@@ -154,6 +154,6 @@ apps = {
     desired_capacity   = 1
     max_size           = 4
     min_size           = 1
-    subnet_name        = "wed"   ## web
+    subnet_name        = "public"   ## web
   }
 }
