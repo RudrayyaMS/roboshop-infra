@@ -98,6 +98,7 @@ alb = {
       name        = "public"
       internal  = false
       load_balancer_type = "application"
+      allow_cidr        = ["0.0.0.0/0"]   # allow to outside world
     }
 
     private = {
@@ -105,6 +106,7 @@ alb = {
       name        = "private"
       internal  = true
       load_balancer_type = "application"
+      allow_cidr        = ["10.0.2.0/24","10.0.3.0/24","10.0.4.0/24","10.0.5.0/24"]  ## allowing only app& web
     }
 }
 
